@@ -16,7 +16,15 @@
     align-items: center;
 }
 
+.panier-item button {
+    margin-bottom: 15px;
+}
+
 .panier-item div:nth-of-type(2) {
     font-weight: 700;
     border-top: 1px solid black;
+}
+
+.panier {
+    margin-left: 60px;
 }

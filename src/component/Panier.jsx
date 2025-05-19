@@ -5,7 +5,7 @@ export default function Panier(props) {
 
     return (
         <div className="panier">
-            <h2>Panier</h2>
+            <h3>Panier</h3>
             {props.panier.map((item, index) => (
             <div key={index} className="panier-item">
                 <div> 

@@ -1,10 +1,10 @@
-
+import './Card.css'
 
 export default function Card(props) {
     
 
     return (
-        <div>
+        <div className="card">
             <div>
                 <img src={props.produit.imgSrc} alt="" />
             </div>

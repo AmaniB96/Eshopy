@@ -2,7 +2,7 @@
 [
   {
     "id": 1,
-    "imgSrc":  "/assets/canap.jpg",
+    "imgSrc":  "/assets/canap.png",
     "productName": "Canapé",
     "prix": 1200.99,
     "stock": 15

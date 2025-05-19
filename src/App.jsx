@@ -16,7 +16,8 @@ const handleMoney = () => {
   return (
     <>
       <Money money={money} handleMoney={handleMoney}></Money>
-      <div>
+
+      <div className='card-container'>
         {product.map((productItem) => (
         <Card key={productItem.id} produit={productItem} ></Card>))}
       </div>

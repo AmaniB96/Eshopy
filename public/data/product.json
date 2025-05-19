@@ -4,35 +4,35 @@
     "id": 1,
     "imgSrc":  "/assets/range-rover-evoque.png",
     "productName": "Range Rover Evoque",
-    "prix": "60.000",
+    "prix": 60000,
     "stock": 4
   },
   {
     "id": 2,
     "imgSrc": "/assets/5008.png",
     "productName": "Peugeot 5008",
-    "prix": "20.000",
+    "prix": 20000,
     "stock": 10
   },
   {
     "id": 3,
     "imgSrc": "/assets/rsq8-1.png",
     "productName": "Audi RSQ8",
-    "prix": "75.000",
+    "prix": 75000,
     "stock": 5
   },
   {
     "id": 4,
     "imgSrc": "/assets/rifter.png",
     "productName": "Peugeot Rifter",
-    "prix": "30.000",
+    "prix": 30000,
     "stock": 10
   },
   {
     "id": 5,
     "imgSrc": "/assets/vw.png",
     "productName": "Volkswagen Polo",
-    "prix": "17.000",
+    "prix": 17000,
     "stock": 10
   }
 ]

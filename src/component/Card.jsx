@@ -13,7 +13,7 @@ export default function Card(props) {
                 <p className="prix">Prix: {props.produit.prix} €</p>
                 <p className="stock">Sotck: {props.produit.stock} pcs</p>
             </div>
-            <button> Acheter </button>
+            <button onClick={() => props.handlePay(props.produit)}> Acheter </button>
         </div>
     )
 }

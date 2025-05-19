@@ -5,21 +5,18 @@ import Card from './component/Card'
 import product from "../public/data/product.json"
 
 function App() {
-const [money,SetMoney] = useState(20)
+const [money,SetMoney] = useState(100000)
 
-const handleMoney = () => {
-  SetMoney(money -1)
+const handlePay = (article) => {
+  SetMoney(money - article.prix)
 }
-
-
-
   return (
     <>
-      <Money money={money} handleMoney={handleMoney}></Money>
+      <Money money={money} ></Money>
 
       <div className='card-container'>
         {product.map((productItem) => (
-        <Card key={productItem.id} produit={productItem} ></Card>))}
+        <Card key={productItem.id} produit={productItem} handlePay={handlePay}></Card>))}
       </div>
     </>
   )

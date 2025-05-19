@@ -1,0 +1,38 @@
+
+[
+  {
+    "id": 1,
+    "imgSrc":  "/assets/canap.jpg",
+    "productName": "Canapé",
+    "prix": 1200.99,
+    "stock": 15
+  },
+  {
+    "id": 2,
+    "imgSrc": "https://via.placeholder.com/150/FF0000/FFFFFF?Text=Product2",
+    "productName": "Wireless Mouse",
+    "prix": 25.50,
+    "stock": 120
+  },
+  {
+    "id": 3,
+    "imgSrc": "https://via.placeholder.com/150/00FF00/000000?Text=Product3",
+    "productName": "Mechanical Keyboard",
+    "prix": 75.00,
+    "stock": 50
+  },
+  {
+    "id": 4,
+    "imgSrc": "https://via.placeholder.com/150/FFFF00/000000?Text=Product4",
+    "productName": "27-inch Monitor",
+    "prix": 299.99,
+    "stock": 30
+  },
+  {
+    "id": 5,
+    "imgSrc": "https://via.placeholder.com/150/00FFFF/000000?Text=Product5",
+    "productName": "Webcam HD",
+    "prix": 49.95,
+    "stock": 75
+  }
+]

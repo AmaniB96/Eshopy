@@ -27,12 +27,5 @@
     "productName": "Peugeot Rifter",
     "prix": 30000,
     "stock": 6
-  },
-  {
-    "id": 5,
-    "imgSrc": "/assets/vw.png",
-    "productName": "Volkswagen Polo",
-    "prix": 10000,
-    "stock": 5
   }
 ]

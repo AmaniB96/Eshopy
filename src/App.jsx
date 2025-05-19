@@ -9,10 +9,10 @@ function App() {
 const [money,SetMoney] = useState(100000)
 const [panier,SetPanier] = useState([])
 const [products, SetProducts] = useState(product)
-const [itemNumber, SetItemNumber] = useState(0)
+
 
 const handlePay = (article) => {
-  
+
     let dejaAuPanier = false
     for(let i = 0; i < panier.length; i++) {
       if(panier[i].id === article.id) {
@@ -31,7 +31,7 @@ const handlePay = (article) => {
         // Update panier to trigger re-render
         SetPanier([...panier])
       }
-      SetItemNumber(itemNumber + 1)
+    
       article.stock -= 1
       SetProducts([...products])
     } else if(article.stock <= 0) {
@@ -42,11 +42,12 @@ const handlePay = (article) => {
 }
 
 const handleRetour = (article) => {
+
    console.log(article);
    SetMoney(money + article.prix)
    const newPanier = panier.filter((item) => item !== article)
    SetPanier(newPanier)
-   SetItemNumber(itemNumber -1)
+
 
    article.stock += 1
    SetProducts([...products])
@@ -61,7 +62,7 @@ const handleRetour = (article) => {
         <Card key={productItem.id} produit={productItem} handlePay={handlePay}></Card>))}
       </div>
 
-      <Panier panier={panier} itemNumber={itemNumber} handleRetour={handleRetour}></Panier>
+      <Panier panier={panier}  handleRetour={handleRetour}></Panier>
     </>
   )
 }

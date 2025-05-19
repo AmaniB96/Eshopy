@@ -1,7 +1,8 @@
 .card {
     border: solid 3px gray;
     border-radius: 15px;
-    width: 15%;
+    width: auto;
+    margin: 15px;
     height: 400px;
     padding: 15px;
     display: flex;
@@ -10,10 +11,37 @@
     align-items: center;
     background-color: rgba(184, 167, 117, 0.97);
     color: black;
+    transition: all 0.3s ease; /* Ajoute une transition fluide */
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Fait "flotter" la card */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Ajoute une ombre portée */
+    border-color: #4a4a4a;
 }
 
 .card img {
-    height: 150px;
+    height: 170px;
+    width: 250px;
+    transition: transform 0.3s ease; /* Transition pour l'image */
+}
+
+.card:hover img {
+    transform: scale(1.05); /* Agrandit légèrement l'image */
+}
+
+.card button {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card button:hover {
+    background-color: #4a4a4a;
+    color: white;
+    transform: scale(1.05);
 }
 
 .productDetails {
@@ -29,4 +57,45 @@
 
 .almost {
     background-color: rgb(246, 103, 7) !important;
+}
+
+/* Add these media queries at the bottom of your file */
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 30%; /* Larger cards on tablets */
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 45%; /* 2 cards per row on small tablets */
+        margin: 8px;
+    }
+
+    .productName {
+        font-size: 13pt;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 90%; /* Single column on phones */
+        height: auto;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .card img {
+        height: 120px;
+    }
+
+    .productDetails {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .productName {
+        font-size: 12pt;
+    }
 }

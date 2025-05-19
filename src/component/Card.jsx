@@ -11,7 +11,7 @@ export default function Card(props) {
             <div className='productDetails'>
                 <p className="productName">{props.produit.productName}</p>
                 <p className="prix">Prix: {props.produit.prix} €</p>
-                <p className="stock">Sotck: {props.produit.stock} pcs</p>
+                <p className="stock">Stock: {props.produit.stock} pcs</p>
             </div>
             <button onClick={() => props.handlePay(props.produit)}> Acheter </button>
         </div>

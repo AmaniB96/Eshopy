@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  height: 80vh;
+  height: auto;
   padding-left: 50px;
   padding-right: 50px;
 }

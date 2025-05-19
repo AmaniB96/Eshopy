@@ -1,3 +1,22 @@
 .panier-item img{
     height: 150px;
 }
+
+.panier-item {
+    border: 3px solid grey;
+    border-radius: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 20%;
+    background-color: rgba(184, 167, 117, 0.97);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panier-item div:nth-of-type(2) {
+    font-weight: 700;
+    border-top: 1px solid black;
+}

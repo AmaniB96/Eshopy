@@ -18,6 +18,13 @@ const handlePay = (article) => {
  }
 }
 
+const handleRetour = (article) => {
+   console.log(article);
+   SetMoney(money + article.prix)
+   const newPanier = panier.filter((item) => item !== article)
+   SetPanier(newPanier)
+}
+
   return (
     <>
       <Money money={money} ></Money>
@@ -27,7 +34,7 @@ const handlePay = (article) => {
         <Card key={productItem.id} produit={productItem} handlePay={handlePay}></Card>))}
       </div>
 
-      <Panier panier={panier}></Panier>
+      <Panier panier={panier} handleRetour={handleRetour}></Panier>
     </>
   )
 }

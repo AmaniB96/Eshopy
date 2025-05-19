@@ -14,6 +14,9 @@ export default function Panier(props) {
                 <div>
                     {item.productName} : {item.prix}€
                 </div>
+                <div>
+                    <p>Quantité: {item.count || 1}</p>
+                </div>
                 <button onClick= { () => {props.handleRetour(item)}}>Rendre l'article</button>
             </div>
             ))}

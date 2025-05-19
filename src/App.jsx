@@ -8,14 +8,37 @@ import Panier from './component/Panier'
 function App() {
 const [money,SetMoney] = useState(100000)
 const [panier,SetPanier] = useState([])
+const [products, SetProducts] = useState(product)
+const [itemNumber, SetItemNumber] = useState(0)
 
 const handlePay = (article) => {
-  if (money >=article.prix) {
-  SetMoney(money - article.prix)
-  SetPanier([...panier,article])
- } else {
-  alert("Pas assez d'argent!")
- }
+  
+    let dejaAuPanier = false
+    for(let i = 0; i < panier.length; i++) {
+      if(panier[i].id === article.id) {
+        dejaAuPanier = true
+        panier[i].count = panier[i].count || 1
+        panier[i].count++
+      }
+    }
+
+    if (money >= article.prix) {
+      SetMoney(money - article.prix)
+      if(!dejaAuPanier) {
+        // Add new article with count of 1
+        SetPanier([...panier, {...article, count: 1}])
+      } else {
+        // Update panier to trigger re-render
+        SetPanier([...panier])
+      }
+      SetItemNumber(itemNumber + 1)
+      article.stock -= 1
+      SetProducts([...products])
+    } else if(article.stock <= 0) {
+      alert("Plus de stock")
+    } else {
+      alert("Pas assez d'argent!")
+    }
 }
 
 const handleRetour = (article) => {
@@ -23,6 +46,10 @@ const handleRetour = (article) => {
    SetMoney(money + article.prix)
    const newPanier = panier.filter((item) => item !== article)
    SetPanier(newPanier)
+   SetItemNumber(itemNumber -1)
+
+   article.stock += 1
+   SetProducts([...products])
 }
 
   return (
@@ -34,7 +61,7 @@ const handleRetour = (article) => {
         <Card key={productItem.id} produit={productItem} handlePay={handlePay}></Card>))}
       </div>
 
-      <Panier panier={panier} handleRetour={handleRetour}></Panier>
+      <Panier panier={panier} itemNumber={itemNumber} handleRetour={handleRetour}></Panier>
     </>
   )
 }

@@ -2,37 +2,37 @@
 [
   {
     "id": 1,
-    "imgSrc":  "/assets/canap.png",
-    "productName": "Canapé",
-    "prix": 1200.99,
-    "stock": 15
+    "imgSrc":  "/assets/range-rover-evoque.png",
+    "productName": "Range Rover Evoque",
+    "prix": "60.000",
+    "stock": 4
   },
   {
     "id": 2,
-    "imgSrc": "https://via.placeholder.com/150/FF0000/FFFFFF?Text=Product2",
-    "productName": "Wireless Mouse",
-    "prix": 25.50,
-    "stock": 120
+    "imgSrc": "/assets/5008.png",
+    "productName": "Peugeot 5008",
+    "prix": "20.000",
+    "stock": 10
   },
   {
     "id": 3,
-    "imgSrc": "https://via.placeholder.com/150/00FF00/000000?Text=Product3",
-    "productName": "Mechanical Keyboard",
-    "prix": 75.00,
-    "stock": 50
+    "imgSrc": "/assets/rsq8-1.png",
+    "productName": "Audi RSQ8",
+    "prix": "75.000",
+    "stock": 5
   },
   {
     "id": 4,
-    "imgSrc": "https://via.placeholder.com/150/FFFF00/000000?Text=Product4",
-    "productName": "27-inch Monitor",
-    "prix": 299.99,
-    "stock": 30
+    "imgSrc": "/assets/rifter.png",
+    "productName": "Peugeot Rifter",
+    "prix": "30.000",
+    "stock": 10
   },
   {
     "id": 5,
-    "imgSrc": "https://via.placeholder.com/150/00FFFF/000000?Text=Product5",
-    "productName": "Webcam HD",
-    "prix": 49.95,
-    "stock": 75
+    "imgSrc": "/assets/vw.png",
+    "productName": "Volkswagen Polo",
+    "prix": "17.000",
+    "stock": 10
   }
 ]

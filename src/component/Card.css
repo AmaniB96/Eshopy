@@ -1,11 +1,28 @@
 .card {
     border: solid 3px gray;
+    border-radius: 15px;
     width: 15%;
     height: 400px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(184, 167, 117, 0.97);
+    color: black;
 }
 
 .card img {
-    height: 100px;
-    width: 100%;
+    height: 150px;
+}
+
+.productDetails {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 96%;
+}
+
+.productName {
+    font-weight: 700;
+    font-size: 15pt;
 }

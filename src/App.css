@@ -1,7 +1,9 @@
 .card-container {
+  box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  justify-content: space-between;
   width: 100vw;
   height: 80vh;
+  padding-left: 50px;
+  padding-right: 50px;
 }
